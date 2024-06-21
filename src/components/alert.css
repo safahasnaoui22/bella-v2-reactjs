@@ -1,0 +1,38 @@
+  
+  .messagecontainer {
+    filter: drop-shadow(0 0 8px rgb(5, 248, 248));
+  }
+  
+  .messagealert {
+   
+    background: #aaa8a8;
+    --aug-border: 2px;
+    --aug-border-bg: rgb(3, 20, 20);
+    width: calc(100% - 20px);
+    max-width: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: all .5s;
+    augmented-ui: exe tl-clip br-clip; /* moved to CSS */
+  }
+  .messagealert:hover{
+    transform: scale(1.1);
+  }
+  .titlealert {
+    display: inline-block;
+    padding: 1px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-align: center;
+  
+ 
+  }
+  .messagealert .palert {
+    color: #fff;
+    padding: 1px;
+    margin: 0;
+    display: block;
+   font-size: 15px;
+    text-align: justify;
+    
+  }

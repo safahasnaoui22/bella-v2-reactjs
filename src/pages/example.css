@@ -1,0 +1,105 @@
+.example {
+border: 1px solid white;
+
+
+padding: 100px;
+height: 800px;
+  
+
+    
+ 
+}
+
+@keyframes moveExample {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px); /* Adjust the distance you want the element to move */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.exampleone {
+  
+    display: flex;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    animation: moveExample 10s infinite; /* Apply the animation to move the element */
+}
+
+.exampleone:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation-play-state: paused; /* Pause the animation on hover */
+}
+
+.mi1, .minip {
+    flex: 1;
+    padding: 10px;
+    border: 1px;
+}
+
+.mi1 {
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.exmpletitle{
+    justify-content: center;
+    text-align: center;
+    color: #b3965a;
+
+}
+
+
+
+
+
+
+.minip .info .name {
+    display: block;
+    font: 200 25px/30px var(--display);
+    text-indent: -25px;
+    letter-spacing: 1px;
+    margin: 0px 0px 10px 25px;
+}
+
+.minip .info .deets {
+    font: 10px/15px var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.minip a.plot {
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    bottom: 85px;
+    left: 85px;
+    background: var(--dgreen);
+    font: 10px/10px var(--mono);
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: bottom .6s linear;
+}
+
+.minip:hover a.plot {
+    bottom: 35px;
+    transition: bottom .6s linear;
+}

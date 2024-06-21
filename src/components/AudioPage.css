@@ -1,0 +1,26 @@
+/* AudioPage.css */
+.audio-page {
+    text-align: center;
+    
+  }
+  .btnaudio{
+    border: none;
+    color: black;
+  }
+  .audio-toggle {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 2px solid;
+    background-color: transparent;
+    transition: all 0.25s linear;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+
+  
+  .music-icon {
+   font-size: 15px;
+    color: black; /* Change color as needed */
+  }

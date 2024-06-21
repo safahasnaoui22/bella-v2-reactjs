@@ -1,0 +1,55 @@
+/* styles.css */
+
+.containervideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    
+   /* Ensure the container takes the full height of the viewport */
+  }
+  
+  .video1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .videocomponent {
+
+  width: 1800px;
+    height: 600px;
+  }
+  /* styles.css */
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.theme-toggle {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 2px solid;
+  background-color: transparent;
+  transition: all 0.25s linear;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+body.light-mode .theme-toggle {
+  border-color: #000;
+  color: #000;
+}
+
+body.dark-mode .theme-toggle {
+  border-color: #fff;
+  color: #fff;
+}
+
+ 
