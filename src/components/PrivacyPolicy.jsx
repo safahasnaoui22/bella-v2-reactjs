@@ -89,8 +89,8 @@ const PrivacyPolicy = () => {
       <p className="contactprivcy">
         Bella Vista<br />
         Tunis, Monastir<br />
-        Email: contactbellavistatunis@gmail.com<br />
-        Phone: 54812998
+        Email: booking.bv@lesoleil-hotels.com<br />
+        Phone:+216 73 520 555
       </p>
 
       <p>Thank you for choosing Bella Vista. We value your trust and are committed to protecting your privacy.</p>

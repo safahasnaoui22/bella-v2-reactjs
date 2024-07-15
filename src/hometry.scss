@@ -1,21 +1,84 @@
 $contBgClr: linear-gradient(to left bottom, #F2E3C6 0%, #A7A1A5 100%);
 $appShadowClr: rgba(#000, .3);
 
+.hometry {
+  display: grid;
+  background-image: $contBgClr;
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+}
+
 .cont {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 900px;
   width: 100%;
-  background-image: $contBgClr;
+  margin-bottom: 200px;
   overflow: hidden;
+}
+
+.rowhero {
+  text-align: center; // Center align content inside .rowhero
+  padding: 20px; // Add padding for spacing
+  height: 0px;
+
+  .wrapperbtntry {
+    display: inline-block; // Ensure buttons are displayed inline
+
+    .ctn {
+      // Add specific styling for your buttons as needed
+      button {
+        margin-right: 10px; // Adjust margin between buttons
+
+        @media screen and (max-width: 768px) {
+          margin-right: 0; // Remove margin between buttons on smaller screens
+          margin-bottom: 10px; // Add margin below buttons
+          display: block; // Stack buttons vertically on smaller screens
+        }
+      }
+    }
+  }
+
+  .animate-charcter {
+    background-image: linear-gradient(
+      -225deg,
+      #B1C6D7 0%,   /* Dark Brown */
+      #C58C1D 20%,  /* Medium Brown */
+      #334A49 40%,  /* Light Brown */
+      #B93C10 60%,  /* Lighter Brown */
+      #4b1301 80%,  /* Even Lighter Brown */
+      #3f1201 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 100px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 70px;
+      margin-top: 40px; // Decrease font size for smaller screens
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 70px; // Further adjust font size for smaller screens
+      margin-top: 40px; // Adjust spacing if needed
+    }
+  }
 }
 
 .app {
   position: relative;
-  min-width: 850px;
-  height: 540px;
+  min-width: 850px; /* Initial minimum width */
+  height: 540px; /* Initial height */
   box-shadow: 0 0 60px $appShadowClr;
   overflow: hidden;
 
@@ -332,11 +395,12 @@ $appShadowClr: rgba(#000, .3);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .app {
-    min-width: 100%;
-    height: auto;
 
+width: 40px;
+
+  
     &__text {
       right: 10px;
       top: 50px;

@@ -9,7 +9,6 @@ const FlightPanel = ({ title, bgImage, outPrice, rtnPrice, linkUrl }) => {
         <div className="borderflight">
           <p className="titleflight">{title}</p>
           <div className="slideflight">
-          
             <div className="lineflight">
               <button className="paraflight">
                 <a href={linkUrl}>lire la Suite</a>
@@ -25,21 +24,23 @@ const FlightPanel = ({ title, bgImage, outPrice, rtnPrice, linkUrl }) => {
 const FlightDeals = () => {
   return (
     <div className="mainflight">
-      <h1 className=" flightca    font-primary text-[45px] ">Types De Chambres</h1>
-                <p className="defligh"> <h2 className="title font-primary servicestitle">🌴 Bienvenue à l’Hôtel Le Soleil Bella Vista ! 🌴</h2>
-
-Détendez-vous dans nos Chambres Supérieures, profitez du confort abordable des Chambres Standard, ou optez pour l’intimité des Chambres Communicantes. Profitez de votre séjour à Monastir ! 😊
-</p>
-       <div className="containerflight">
-      
-    
-      <FlightPanel title="Standart" bgImage="card1flight" outPrice="849" rtnPrice="659" linkUrl="/StandartRomm" />
-    
-    <FlightPanel title="communicante" bgImage="card2flight" outPrice="999" rtnPrice="745" linkUrl="/ComDt" />
-    <FlightPanel title="Superieur" bgImage="card3flight" outPrice="399" rtnPrice="257" linkUrl="/SupDt" />
-  </div>
+      <h1 className="flightca font-primary text-[45px]">Types De Chambres</h1>
+      <p className="defligh">
+        <h2 className="title font-primary servicestitle">🌴 Bienvenue à l’Hôtel Le Soleil Bella Vista ! 🌴</h2>
+        Détendez-vous dans nos Chambres Supérieures, profitez du confort abordable des Chambres Standard, ou optez pour l’intimité des Chambres Communicantes. Profitez de votre séjour à Monastir ! 😊
+      </p>
+      <div className="containerflight">
+        <div className="panel-container">
+          <FlightPanel title="Standart" bgImage="card1flight" outPrice="849" rtnPrice="659" linkUrl="/StandartRomm" />
+        </div>
+        <div className="panel-container">
+          <FlightPanel title="communicante" bgImage="card2flight" outPrice="999" rtnPrice="745" linkUrl="/ComDt" />
+        </div>
+        <div className="panel-container">
+          <FlightPanel title="Superieur" bgImage="card3flight" outPrice="399" rtnPrice="257" linkUrl="/SupDt" />
+        </div>
+      </div>
     </div>
-   
   );
 };
 

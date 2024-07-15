@@ -31,9 +31,6 @@ function SocialTry() {
     <FontAwesomeIcon icon={faWhatsapp} className="fa-lg" />
 </div>
 
-                    <div className="btnsocialtry">
-                        <FontAwesomeIcon icon={faComments} className="fa-lg" />
-                    </div>
                 </div>
             </div>
         </div>

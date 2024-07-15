@@ -68,12 +68,12 @@ const ComDt = () => {
           </li>
           <li className='flex items-center gap-x-4'>
             <FaCheck className='text-accent'/>
-            Check-out: 10:30 AM
+            Check-out: 12:00 
           </li>
          
           <li className='flex items-center gap-x-4'>
             <FaCheck className='text-accent'/>
-            No smoking
+            No pets allowed
           </li>
         </ul>
       </div>

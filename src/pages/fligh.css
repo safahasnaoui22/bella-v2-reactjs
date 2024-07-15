@@ -1,27 +1,32 @@
-.flightca{
-margin-top: 150px;
-color: #b3965a;
-text-align: center;
-justify-content: center;
-margin-bottom: 40px;
-animation: fadeInLeft 2s ease forwards;
-}
-.flightdes{
+/* CSS for fligh.css */
+
+/* Main heading */
+.flightca {
+    margin-top: 150px;
+    color: #b3965a;
+    text-align: center;
+    justify-content: center;
     margin-bottom: 40px;
+    animation: fadeInLeft 2s ease forwards;
+    font-size: 45px;
+  }
+  
+  /* Description */
+  .defligh {
     margin-top: 40px;
     width: 1000px;
     text-align: center;
-justify-content: center;
-margin-left: 300px;
-animation: fadeInRight 2s ease forwards;
-
-
-}
-.mainflight{
-background-color: rgb(250, 246, 246);
-
-}
-.containerflight {
+    justify-content: center;
+    margin-left: 300px;
+    animation: fadeInRight 2s ease forwards;
+  }
+  
+  .mainflight {
+    background-color: rgb(250, 246, 246);
+  }
+  
+  /* Container for flight panels */
+  .containerflight {
     animation: slideFromBottom 3s ease forwards;
     max-height: 600px;
     max-width: 1200px;
@@ -32,123 +37,108 @@ background-color: rgb(250, 246, 246);
     align-items: center;
     margin: 0 auto;
     background-color: #c5d9e962;
-  
     margin-bottom: 40px;
-}
-@keyframes fadeInRight {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
   }
   
-  @keyframes slideFromBottom {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .panel-container {
+    width: 30%; /* Adjust width of panel containers */
+    margin: 20px; /* Add margin around panel containers */
   }
-.panelflight {
+  
+  .panelflight {
     height: 270px;
-    width: 190px;
+    width: 100%; /* Adjust panel width for responsiveness */
+    max-width: 300px; /* Set maximum width for panels */
     position: relative;
-}
-
-.panelflight:hover .cardflight {
+  }
+  
+  .panelflight:hover .cardflight {
     filter: blur(1.5px);
-}
-
-.panelflight:hover .card1flight {
+  }
+  
+  .panelflight:hover .card1flight {
     background-size: 215% 135%;
     animation: slideFromBottom 3s ease forwards;
-}
-
-.panelflight:hover .card2flight {
+  }
+  
+  .panelflight:hover .card2flight {
     background-size: 115% 115%;
     animation: slideFromBottom 3s ease forwards;
-}
-
-.panelflight:hover .card3flight {
+  }
+  
+  .panelflight:hover .card3flight {
     background-size: 155% 115%;
     animation: slideFromBottom 3s ease forwards;
-}
-
-.panelflight:hover .lineflight {
+  }
+  
+  .panelflight:hover .lineflight {
     color: rgba(255, 255, 255, 0.2);
-}
-
-.panelflight:hover .borderflight {
+  }
+  
+  .panelflight:hover .borderflight {
     border: 1px solid rgba(255, 255, 255, 1);
-}
-
-.panelflight:hover .slideflight {
+  }
+  
+  .panelflight:hover .slideflight {
     bottom: 0px;
-    z-index: 2; /* Ensure it appears above other elements */
-}
-
-.panelflight:hover .ringflight:before,
-.panelflight:hover .ringflight:after {
+    z-index: 2;
+  }
+  
+  .panelflight:hover .ringflight:before,
+  .panelflight:hover .ringflight:after {
     transform: translateX(-50%) translateY(-50%) rotate(310deg);
-}
-
-.ringflight,
-.cardflight,
-.borderflight,
-.slideflight,
-.lineflight {
+  }
+  
+  .ringflight,
+  .cardflight,
+  .borderflight,
+  .slideflight,
+  .lineflight {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.ringflight {
+  }
+  
+  .ringflight {
     color: #fffbf1;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 170px;
-    z-index: 2; /* Ensure it doesn't cover the slideflight */
-}
-
-.cardflight {
+    z-index: 2;
+  }
+  
+  .cardflight {
     background: #070706;
     position: relative;
     transition: all 1s;
     height: 270px;
     width: 190px;
     border: 1px solid rgba(255, 255, 255, 1);
-    z-index: 0; /* Ensure it doesn't cover the slideflight */
-}
-
-.card1flight {
+    z-index: 0;
+  }
+  
+  .card1flight {
     background-image: url("standart.jpg");
     background-repeat: no-repeat;
     background-size: 200% 120%;
-}
-
-.card2flight {
+  }
+  
+  .card2flight {
     background-image: url("commun.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-
-.card3flight {
+  }
+  
+  .card3flight {
     background-image: url("MainRoom.jpg");
     background-repeat: no-repeat;
     background-size: 140% 100%;
-}
-
-.ringflight:before,
-.ringflight:after {
+  }
+  
+  .ringflight:before,
+  .ringflight:after {
     content: "";
     padding: 0.7em 0.4em;
     position: absolute;
@@ -160,61 +150,62 @@ background-color: rgb(250, 246, 246);
     border-radius: 50%;
     transition: transform 1s;
     transform: translateX(-50%) translateY(-50%) rotate(50deg);
-}
-.defligh {
+  }
+  
+  .defligh {
     margin-top: 20px;
     width: 700px;
-   
     justify-content: center;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-}
-.ringflight:before {
+  }
+  
+  .ringflight:before {
     border-color: rgb(172, 165, 165) rgb(235, 235, 235) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     z-index: -1;
-}
-
-.ringflight:after {
+  }
+  
+  .ringflight:after {
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(235, 235, 235) rgb(235, 235, 235);
-}
-
-.titleflight {
+  }
+  
+  .titleflight {
     font-size: 29px;
     color: #070706;
     transition: all 1s;
     top: 0;
-}
-
-.paraflight {
+  }
+  
+  .paraflight {
     bottom: 0;
     width: 300px;
     font-size: 20px;
     font-family: "Raleway";
-border: none;
+    border: none;
     margin: 0;
     text-align: center;
-    background-color: transparent; /* Background color red */
-    cursor: pointer; /* Pointer cursor */
-}
-
-.paraflight a {
-    color: white; /* Link text color */
-    text-decoration: none; /* Remove underline from link */
-    display: block; /* Make the link fill the button */
-}
-
-.borderflight {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .paraflight a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .borderflight {
     position: absolute;
     border: 1px solid rgba(255, 255, 255, 0.5);
     height: 260px;
     width: 180px;
     transition: border 1s;
     overflow: hidden;
-}
-
-.slideflight {
+  }
+  
+  .slideflight {
     height: 260px;
     width: 180px;
     position: absolute;
@@ -222,5 +213,73 @@ border: none;
     background: rgba(0, 0, 0, 0.5);
     transition: bottom 1s;
     flex-direction: column;
-    z-index: 1; /* Ensure it appears above other elements */
-}
+    z-index: 1;
+  }
+  
+  @media (max-width: 1024px) {
+    .containerflight{
+       
+            height: 100%;
+            margin-bottom: 330px;
+           }
+    .defligh {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .containerflight {
+      flex-direction: column;
+      align-items: center;
+    }
+    .panel-container {
+      width: 80%; /* Adjust width of panel containers */
+      margin: 20px auto; /* Add margin around panel containers */
+    }
+  }
+  
+  @media (max-width: 768px) {
+   .containerflight{
+    
+    height: 100%;
+    margin-bottom: 330px;
+   }
+    .flightca {
+      margin-top: 80px;
+      font-size: 36px; /* Adjust font size for smaller screens */
+    }
+    .defligh {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .containerflight {
+      flex-direction: column;
+      align-items: center;
+    }
+    .panel-container {
+      width: 90%; /* Adjust width of panel containers */
+      margin: 20px auto; /* Add margin around panel containers */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+    .flightca {
+      margin-top: 60px;
+      font-size: 28px; /* Adjust font size for smaller screens */
+    }
+    .defligh {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .containerflight {
+      flex-direction: column;
+      align-items: center;
+    }
+    .panel-container {
+      width: 90%; /* Adjust width of panel containers */
+      margin: 20px auto; /* Add margin around panel containers */
+    }
+  }
+  

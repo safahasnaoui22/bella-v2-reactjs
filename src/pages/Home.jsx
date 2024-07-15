@@ -13,14 +13,18 @@ import Services from "./Services";
 import SocialTry from "./SocialTry";
 import SuitsandRooms from "./SuitsandRooms";
 import Testimonials from "../Testimonials";
+import Title from "../Title";
 import VideoComponent from "./VideoComponent";
 
 const Home = () => {
   return <>
-
-  <HomeTry/>
-  <div className='container mx-auto relative'>
+  <div>
   
+  <HomeTry/>
+  </div>
+
+  <div className='container mx-auto relative'>
+ 
 
   <div className=" bg-accent/20 "> 
   <div>

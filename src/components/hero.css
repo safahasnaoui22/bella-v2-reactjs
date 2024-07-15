@@ -1,27 +1,3 @@
-.animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #B1C6D7 0%,   /* Dark Brown */
-    #C58C1D 20%,  /* Medium Brown */
-    #334A49 40%,  /* Light Brown */
-    #B93C10 60%,  /* Lighter Brown */
-    #4b1301 80%,  /* Even Lighter Brown */
-    #3f1201 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 100px;
-}
 .video-container {
   max-width: 100%;
   height: auto;

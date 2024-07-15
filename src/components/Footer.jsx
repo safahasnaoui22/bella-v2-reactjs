@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer-row">
      
           <div className="footer-bottom">
-            <a href="/"><img src="./logo.png" alt="logo" /></a>
+            <a href="/"><img src="./BV.png" alt="logo" /></a>
           
           </div>
          

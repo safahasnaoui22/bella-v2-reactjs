@@ -69,12 +69,10 @@ const HomeTry = () => {
 
   return (
 
-    <div>
+    <div className="hometry">
     
- 
- <div className="cont">
- <div className="rowhero">
-    <div className="col-md-12 text-center">
+    <div className="rowhero">
+    <div className=" text-center">
       <h3 className="animate-charcter"> BELLA VISTA</h3>
       <div className="wrapperbtntry ctn">
 
@@ -83,7 +81,10 @@ const HomeTry = () => {
     </div>
   </div>
   
-  
+ <div className="cont">
+
+ 
+
 
 
       <div className="mouse"></div>
@@ -97,15 +98,15 @@ const HomeTry = () => {
           <img onMouseDown={(e) => e.preventDefault()} src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
         </div>
         <div className="app__text app__text--1">
-          <div className="app__text-line app__text-line--4">Élégant </div>
-          <div className="app__text-line app__text-line--3">Confortable</div>
+          <div className="app__text-line app__text-line--4  ">Élégant </div>
+          <div className="app__text-line app__text-line--3 animate-charcter">Confortable</div>
           <div className="app__text-line app__text-line--2">Accueillant </div>
           <div className="app__text-line app__text-line--1">
             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" />
           </div>
         </div>
         <div className="app__text app__text--2">
-          <div className="app__text-line app__text-line--4">Agréable</div>
+          <div className="app__text-line app__text-line--4 animate-charcter">Agréable</div>
           <div className="app__text-line app__text-line--3">Chaleureux</div>
           <div className="app__text-line app__text-line--2">Chic </div>
           <div className="app__text-line app__text-line--1">
