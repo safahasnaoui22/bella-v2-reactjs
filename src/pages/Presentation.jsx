@@ -15,7 +15,7 @@ function Presentation() {
     // Set mounted to true after the component mounts
     setMounted(true);
   }, []);
-  const text = "Bella Vista Hotel";
+  const text = "  Bella Vista ";
   return (
     <div className={`presentation ${mounted ? 'fade-in' : ''}`}>
       <div className="presentation-container">

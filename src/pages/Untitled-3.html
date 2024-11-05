@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import url("https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap");
+
+        * {
+          box-sizing: border-box;
+        }
+        
+        .move {
+          min-height: 100vh;
+        }
+        
+        .move {
+          --space: 2rem;
+        
+          display: grid;
+          align-content: center;
+          overflow: hidden;
+          gap: var(--space);
+          width: 100%;
+          font-family: "Corben", system-ui, sans-serif;
+          font-size: 1.5rem;
+          line-height: 1.5;
+        }
+        
+        .marquee {
+          --duration: 60s;
+          --gap: var(--space);
+        
+          display: flex;
+          overflow: hidden;
+          user-select: none;
+          gap: var(--gap);
+          transform: skewY(-3deg);
+        }
+        
+        .marquee__group {
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          gap: var(--gap);
+          min-width: 100%;
+          animation: scroll var(--duration) linear infinite;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+          .marquee__group {
+            animation-play-state: paused;
+          }
+        }
+        
+        .marquee__group img {
+          max-width: clamp(10rem, 1rem + 28vmin, 20rem);
+          aspect-ratio: 1;
+          object-fit: cover;
+          border-radius: 1rem;
+        }
+        
+        .marquee__group p {
+          background-image: linear-gradient(
+            75deg,
+            hsl(240deg 20% 20%) 0%,
+        hsl(253deg 20% 20%) 11%,
+        hsl(267deg 20% 20%) 22%,
+        hsl(280deg 21% 20%) 33%,
+        hsl(293deg 21% 20%) 44%,
+        hsl(307deg 21% 20%) 56%,
+        hsl(320deg 21% 20%) 67%,
+        hsl(333deg 22% 20%) 78%,
+        hsl(347deg 22% 20%) 89%,
+        hsl(0deg 23% 19%) 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
+        .marquee--borders {
+          border-block: 3px solid dodgerblue;
+          padding-block: 0.75rem;
+        }
+        
+        .marquee--reverse .marquee__group {
+          animation-direction: reverse;
+          animation-delay: calc(var(--duration) / -2);
+        }
+        
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+        
+          100% {
+            transform: translateX(calc(-100% - var(--gap)));
+          }
+        }
+        </style>
+</head>
+<body>
+    <div class="move">
+        <div class="marquee">
+            <div class="marquee__group">
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/Waterslides-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/thirdrestau-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/restualacart-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/MainRoom-1.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/commun-scaled.jpg' alt=''>
+            </div>
+          
+            <div aria-hidden="true" class="marquee__group">
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/Waterslides-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/thirdrestau-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/restualacart-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/MainRoom-1.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/commun-scaled.jpg' alt=''>
+            </div>
+          </div>
+          
+          <div class="marquee marquee--borders" style="--duration: 100s">
+            <div class="marquee__group">
+              <p>Bella vista </p>
+              <p aria-hidden="true">bella vista</p>
+              <p aria-hidden="true">bella vista</p>
+            </div>
+          
+            <div aria-hidden="true" class="marquee__group">
+              <p>bella vista</p>
+              <p>bella vista</p>
+              <p>bella vista </p>
+            </div>
+          </div>
+          
+          <div class="marquee marquee--reverse">
+            <div class="marquee__group">
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/kidspool-4-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/mother-3-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/kidplay-3.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/girl-3-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/secondrest-scaled.jpg' alt=''>
+            </div>
+          
+            <div aria-hidden="true" class="marquee__group">
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/kidspool-4-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/mother-3-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/kidplay-3.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/girl-3-scaled.jpg' alt=''>
+              <img src='http://lesoleilbellavista.com/wp-content/uploads/2024/08/secondrest-scaled.jpg' alt=''>
+            </div>
+          </div>
+    </div>
+   
+</body>
+</html>
